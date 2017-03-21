@@ -1,0 +1,16 @@
+---
+layout: post
+title: This is it!
+---
+
+Nine years. It's **3,288** days from the day I won my first award of a computer science competition till now.
+
+Cannot believe I am back to coding for being totally away for so long. Choosing major in my undergrad was a time that I thought I was never gonna touch coding since my dad expected me to be a white-collar lady in one of those concrete buildings, talking with a client.
+
+Given up a promising job in Shanghai and flied **7,286** miles all the way to the opposite side of the world, I'm determined to follow my heart this time.
+
+Now here I am, with expected dual degree in MBA and MSIT and all fresh technical knowledge learned with the past two years. It is time to start something different to memorise this moment and more coming in the future.
+
+### The goal
+This site is for me to record leisure interests, lesson learned, and more *every other day* until I start official coding for business problems! 
+

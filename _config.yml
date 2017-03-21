@@ -1,1 +1,19 @@
-theme: jekyll-theme-merlot
+# Setup
+title:               lmdolphy
+tagline:             'Explore broader, dive deeper'
+description:         'Studied econ, worked as a tax consultant, now diving into programming and more'
+url:                 https://yunhan-zheng.github.io/lmdolphy/
+baseurl:             ''
+paginate:            3
+
+# About/contact
+author:
+  name:              Yunhan Zheng
+  url:               https://twitter.com/mdo
+  email:             yunhan.zheng@hotmail.com
+
+# Custom vars
+version:             1.0.0
+
+# Gems
+gems: [jekyll-paginate]
