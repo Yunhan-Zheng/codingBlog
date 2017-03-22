@@ -4,7 +4,7 @@ title: Bug fix of Project Page URL Structure
 tags: bug front_end
 ---
 
-As a newbie in front end development, I prefer learn by doing and researching instead of taking an online course.
+As a newbie in front end development, I prefer learning by doing and researching instead of taking an online course.
 
 The first bug in my personal site is because the [git hub page structure is incompatible with simply adopting jekyll](http://jekyllrb.com/docs/github-pages/#project_page_url_structure).  
 
