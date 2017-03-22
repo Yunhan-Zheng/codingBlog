@@ -1,6 +1,7 @@
 ---
 layout: post
 title: This is it!
+tags: goal
 ---
 
 Nine years. It's **3,288** days from the day I won my first award of a computer science competition till now.
