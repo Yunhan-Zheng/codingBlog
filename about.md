@@ -12,4 +12,4 @@ Have questions or suggestions? Feel free to [open an issue on GitHub](https://gi
 
 Thanks for reading!
 
-<a href=""></a>@Yunhan Zheng
+<a href="mailto:yunhan.zheng@hotmail.com"></a>Yunhan Zheng
