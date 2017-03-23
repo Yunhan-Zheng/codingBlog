@@ -4,7 +4,7 @@ title: Eight Queens
 tags: algorithm lynda
 ---
 
-To any developer, **Eight Queens** cannot be familiar.
+To any developer, **Eight Queens** cannot be more familiar.
 
 <blockquote>
 	The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other.
