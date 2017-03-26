@@ -7,9 +7,9 @@ tags: code_efficiency lynda
 One of my favorite lynda lecturers, [Simon Allardice](https://www.lynda.com/Simon-Allardice/21-1.html), offers foundational courses regardless of what language you use. I'm taking his course [Foundation of Programming: Code Efficiency](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Foundations-Programming-Code-Efficiency/122461-2.html) 
 
 
-Late instantiation: when an object is requested, check if **it's null**, then instantiate the object.
+One strategy to improve memory efficiency, specifically, is called late instantiation - when an object is requested, check if **it's null**, then instantiate the object.
 
-Instead of using below
+Here is an example. Instead of using below
 <p><pre>
 //class creation
 class Student{   
@@ -31,7 +31,7 @@ class Student{
 }
 </pre></p>
 
-some attributes of an object can be moved out of the constructor. They will be created if a user asks for it.
+some attributes of an object can be moved out of the constructor which in this case is the *photo* property. They will be created if a user asks for it.
 <pre>
 //...
 
