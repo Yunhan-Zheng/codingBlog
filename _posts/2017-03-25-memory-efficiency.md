@@ -1,6 +1,6 @@
 ---
 layout: post
-title: memory efficiency - late instantation
+title: Memory efficiency - late instantation
 tags: code_efficiency lynda
 ---
 
