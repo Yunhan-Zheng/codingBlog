@@ -46,4 +46,4 @@ public Image getPhoto(){
 	}
 	return photo;
 }
-</pre>
+</pre> 

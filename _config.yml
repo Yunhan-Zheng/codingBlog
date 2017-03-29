@@ -1,7 +1,7 @@
 # Setup
 title:               lmdolphy
 tagline:             'Explore broader, dive deeper'
-description:         'Studied econ, worked as a tax consultant, now diving into programming and more. Hello World!'
+description:         'Studied econ, worked as a tax consultant, now diving into programming and more. Hello World from Yunhan's personal blog!'
 #url:                 https://yunhan-zheng.github.io/lmdolphy
 baseurl:             /lmdolphy
 paginate:            5
