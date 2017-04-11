@@ -3,7 +3,9 @@ layout: post
 title: Leetcode-Rank Scores and Department Highest Salary
 tags: Leetcode sql
 ---
-**Q178 [Rank Scores](https://leetcode.com/problems/rank-scores/#/description)**
+<strong>Q178 
+    <a href="https://leetcode.com/problems/rank-scores/#/description" target="_blank">Rank Scores</a>
+</strong>
 
 The core logic in this question is to find the corresponding rank for a score.
 Looking at the desired output, soon you'll notice that one way to solve this problem is to find how many *distinctive* numbers greater than or equal to a specific score.
@@ -28,7 +30,9 @@ FROM scores
 ORDER BY score DESC
 {% endhighlight %}
 
-**Q184 [Department Highest Salary](https://leetcode.com/problems/department-highest-salary/)**
+<strong>Q184 
+    <a href="https://leetcode.com/problems/department-highest-salary/" target="_blank">Department Highest Salary</a>
+</strong>
 
 Given tables <code>employee</code> and <code>department</code> below,
 <pre>
