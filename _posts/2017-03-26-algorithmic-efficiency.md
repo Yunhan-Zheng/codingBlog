@@ -9,16 +9,16 @@ Following my previous post on code efficiency, today I'm gonna write down some t
 Iterate the same data in both the inner loop and outer loop.
 <br>
 Example A:
-<pre>
+{% highlight ruby %}
 abcMethod(){
 	for (a : aCollection){
-	   //do sth
-	   for (b: aCollection){
-	      //do sth
+	   // do sth
+	   for (b : aCollection){
+	      // do sth
 	   }
 	}
 }
-</pre>
+{% endhighlight %}
 
 Example B:
 <pre>
@@ -30,7 +30,7 @@ abcMethod(){
 }
 
 <strong>xyzMethod()</strong>{
-	for (b: aCollection){
+	for (b : aCollection){
 	      //do sth
 	}
 }

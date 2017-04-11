@@ -10,26 +10,27 @@ One of my favorite lynda lecturers, [Simon Allardice](https://www.lynda.com/Simo
 One strategy to improve memory efficiency, specifically, is called late instantiation - when an object is requested, check if **it's null**, then instantiate the object.
 
 Here is an example. Instead of using below
-<p><pre>
-//class creation
+<p>
+{% highlight ruby %}
+// class creation
 class Student{   
 	String name;
 	Image photo;
-	//etc
+	// something
 
-	//constructor
+	// constructor
 	public Student (String st){     
-		name = n;
-		//an image object is created when a student object
-		is created
-		photo = new Image("~/path/student/images"+name);  
+	  name = n;
+	  // an image object is created when a student object is created
+	  photo = new Image("~/path/student/images"+name);  
 	}
 
 	public Image getPhoto(){
-		return photo;
+	  return photo;
 	}
 }
-</pre></p>
+{% endhighlight %}
+</p>
 
 some attributes of an object can be moved out of the constructor which in this case is the *photo* property. They will be created if a user asks for it.
 <pre>
