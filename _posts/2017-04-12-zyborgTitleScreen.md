@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Title screen
+title: Simple portfolio
 tags: wayfair
 ---
-Project Zyborg is a 3D game built with Unity using C#. The sample below is the script for a menu where user can start/pause/quit the game by clicking corresponding buttons.
+<li>Project Zyborg is a 3D RPG game built with Unity using C#.</li>
+
+The sample below is the script for a menu where user can start/pause/quit the game by clicking corresponding buttons.
 
 {% highlight ruby %}
 using UnityEngine;
@@ -54,3 +56,59 @@ public class menuScript : MonoBehaviour {
 
 {% endhighlight %}
 
+The sample below is the script for the Actor class which is a super class for player, enemy, NPC and projectile classes.
+{% highlight ruby %}
+using UnityEngine;
+using System.Collections;
+
+public class Actor : MonoBehaviour {
+
+    public Stats _stats;
+
+    private int _id;
+    private string _name;
+
+    public Actor()
+    {
+        _stats = new Stats();
+    }
+
+    /// <value>The identifier number for this object.</value>
+    public int Id {
+        get {
+            return _id;
+        }
+
+        set {
+            _id = value;
+        }
+    }
+
+    public string Name {
+        get {
+            return _name;
+        }
+
+        set {
+            _name = value;
+        }
+    }
+
+    public Stats ActorStats {
+        get {
+            return _stats;
+        }
+
+        set {
+            _stats = value;
+        }
+    }
+}
+{% endhighlight %}
+
+<li>The below domain model is about a system for a real estate company. It provides customer/employee access for property listings, preference editing, offer bidding and tracking.</li>
+
+<li>The below sequence digram depicts the interactions among customers, system, cafeteria and payment processor.</li>
+<a href="{{site.baseurl}}/public/image/Real estate company information system.png"><img alt="Domain model for a real estate company's information system" src="{{site.baseurl}}/public/image/Real estate company information system.png"/></a>
+
+<a href="{{site.baseurl}}/public/image/Assignment 5-4.png"><img alt="Sequence diagram for a university cafeteria ordering system" src="{{site.baseurl}}/public/image/Assignment 5-4.png"/></a>
