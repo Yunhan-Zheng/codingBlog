@@ -108,7 +108,7 @@ public class Actor : MonoBehaviour {
 
 <li>The below domain model is about a system for a real estate company. It provides customer/employee access for property listings, preference editing, offer bidding and tracking.</li>
 
-<li>The below sequence digram depicts the interactions among customers, system, cafeteria and payment processor.</li>
 <a href="{{site.baseurl}}/public/image/Real estate company information system.png"><img alt="Domain model for a real estate company's information system" src="{{site.baseurl}}/public/image/Real estate company information system.png"/></a>
 
+<li>The below sequence digram depicts the interactions among customers, system, cafeteria and payment processor.</li>
 <a href="{{site.baseurl}}/public/image/Assignment 5-4.png"><img alt="Sequence diagram for a university cafeteria ordering system" src="{{site.baseurl}}/public/image/Assignment 5-4.png"/></a>
