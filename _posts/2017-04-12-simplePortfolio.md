@@ -14,7 +14,7 @@ comments: true
 
 <h3 id="zyborg">Project Zyborg</h3>
 
-It is a 3D RPG game built with Unity using C#.
+It is a 3D RPG game built with Unity using C# by us, a 9-person team.
 
 The sample below is the script for a menu where user can start/pause/quit the game by clicking corresponding buttons.
 
