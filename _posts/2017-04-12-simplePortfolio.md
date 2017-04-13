@@ -2,6 +2,7 @@
 layout: post
 title: Simple portfolio
 tags: wayfair
+comments: true
 ---
 <li>
 <a><strong>TOC</strong></a>
