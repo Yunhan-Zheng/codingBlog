@@ -14,11 +14,10 @@ Example: input `absncsn`,`sn`, should return `2`.
 ```java
 class Solution {
     public int strStr(String source, String target) {
-        // set index
-        int index= -1;
+
+        int index = -1;
         
-        //return -1 if either @param is null
-        if(target==null||source==null){
+        if(target == null || source == null){
             return index;
         }
         //return 0 if target is an empty string
@@ -31,16 +30,15 @@ class Solution {
         //1)the rest of source cannot hold whole target
         //2)loop reaches the end letter of target
 
-            // read length
-            int sl=source.length();
-            int tl=target.length();
-            for (int i =0;i<sl;i++){
-              if(source.charAt(i)==target.charAt(0)){
-                //set flag
+            int sl = source.length();
+            int tl = target.length();
+            for (int i =0; i < sl; i++){
+              if(source.charAt(i) == target.charAt(0)){
+
                 boolean existed = true;
                     
-                for(int j=1;j<tl;j++){
-                  if((i+j)>=sl||source.charAt(i+j)!=target.charAt(j)){
+                for(int j = 1; j < tl; j++){
+                  if((i + j) >= sl || source.charAt(i + j) != target.charAt(j)){
                     existed = false;
                   }
                 }
