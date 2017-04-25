@@ -85,7 +85,7 @@ class Solution {
         for (int i = index; i < S.length; i++) {
             path.add(S[i]);
             dfs(S, i + 1, path, ret);
-            path.remove(path.size() - 1); //backtrack to a node 
+            path.remove(path.size() - 1); 
         }
     }
 }
@@ -95,4 +95,4 @@ Reference:
 
 [1] :<a href='http://www.fusu.us/2013/07/the-subsets-problem.html' target='_blank'>http://www.fusu.us/2013/07/the-subsets-problem.html</a>
 
-[2] :<a href='http://www.fusu.us/2013/07/the-subsets-problem.html' target='_blank'>https://en.wikipedia.org/wiki/Depth-first_search</a>
+[2] :<a href='https://en.wikipedia.org/wiki/Depth-first_search' target='_blank'>https://en.wikipedia.org/wiki/Depth-first_search</a>
