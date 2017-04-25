@@ -28,14 +28,14 @@ In below piece of code, it uses bit operation, which I have researched and summa
 
 ```java
 class Solution {
-  public ArrayList<ArrayList<Integer>> subsets(int[] nums) {
+  public ArrayList<ArrayList<Integer>> subsets(int[] S) {
     ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
     
-    if(num == null || num.length == 0){
+    if(S == null || S.length == 0){
 
-      Arrays.sort(nums);
+      Arrays.sort(S);
 
-      int l = nums.length;
+      int l = S.length;
         
       //there are 2^l subsets, type long limits l to 64
       long n = (long) Math.pow(2,l);
@@ -45,7 +45,7 @@ class Solution {
         long temp = i;
         while(temp != 0){
           int bitIndex = findLowestBit(temp);
-          subset.add(nums[bitIndex]);
+          subset.add(S[bitIndex]);
           //clear processed bit
           temp ^= 1 << bitIndex;
         }
