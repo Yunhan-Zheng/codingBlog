@@ -40,7 +40,7 @@ Note that this also works for negative decimals. To find the negative value of a
       n-th bit is not set
     }
 
-Based on the first bit hack, we know whether the smallest bit is set or not. Following the same logic, by left shifting 1 to the n-th bit and AND-ing with X will check the n-th(0-based) bit.
+Based on the first bit hack, we know whether the smallest bit is set or not. Following the same logic, by left shifting 1 to the n<sub>th</sub> bit and AND-ing with X will check the n<sub>th</sub>(0-based) bit.
 
 Example: 
 
@@ -52,7 +52,7 @@ So we know what value is on 3th bit(from right to left and start from 0).
 ### 3. Set the n-th bit
     y = x | (1<<n)
 
-When OR-ing X with a mask `00..1..0` where n<sub>th</sub> bit is 1, other bits will not change except the nth bit being always 1 after the OR-ing.
+When OR-ing X with a mask `00..1..0` where n<sub>th</sub> bit is 1, other bits will not change except the n<sub>th</sub> bit being always 1 after the OR-ing.
 
 ### 4. Unset the n-th bit
     y = x & ~(1<<n)
@@ -65,6 +65,7 @@ The main function is done by `~(1<<n)` which sets all bits to **1** except the n
 This is called toggle because 
 
 1)if the n<sub>th</sub> bit is 1, XOR-ing it with 1 will change it to 0; 
+
 2)if the n<sub>th</sub> bit is 0, XOR-ing it with 1 will change it to 1.
 
 Example: `temp ^= 1 << bitIndex` in the privous post. Say temp = 00000011, bitIndex = 0, XOR-ing clears the bitIndex.

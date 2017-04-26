@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leetcode-Nth Highest Salary
-tags: Leetcode sql
+tags: leetcode sql
 ---
 <strong>Q177 
     <a href="https://leetcode.com/problems/nth-highest-salary/#/description" target="_blank">Nth Highest Salary</a>

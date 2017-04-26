@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leetcode-Rank Scores and Department Highest Salary
-tags: Leetcode sql
+tags: leetcode sql
 ---
 <strong>Q178 
     <a href="https://leetcode.com/problems/rank-scores/#/description" target="_blank">Rank Scores</a>
