@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Permutation
-tags: algorithm
+tags: algorithm leetcode jiuzhang
 comments: true
 ---
 
@@ -84,51 +84,72 @@ public class permutateCharArray {
 }
 ```
 ### Permutation with recursion
-Given a charArray `abc`, all the permutations are `abc`,`bac`,`cba`,`acb`,`bca` and `cab`. In this permutation with recursion method, think `bac` and `cba` as results from swapping the first letter `a` with post letters `b` and `c` in `abc` respectively, while `acb` as a result from swapping `b` with its post letter `c` in `abc`. In general, permutation is equal to swapping a letter with other letters following it, starting from the first letter to the second last one.
+Given an integer array with no duplicates `123`, all the permutations are `123`,`213`,`321`,`132`,`231` and `312`. In this permutation with recursion method, think `213` and `312` as results from swapping `1` with post integers `2` and `3` in `123` respectively, while `132` as a result from swapping `2` with its post integer `3` in `123`. In general, permutation is equal to swapping an integer with others following it, starting from the first position to the second last one.
 
 ```java
-public static void main(String[] args){
-    String str="abc";
-    permutations(str,0,str.length);
-}
-
-//permutation with recursion. 'start' is the index of the starting point for swap;'len' is the length of the string.
-private static void permutations(String str,int start, int len){
-    if (start == len-1){
-        println(str);
+class Solution {
+    /**
+     * @param nums: A list of integers.
+     * @return: A list of permutations.
+     */
+    public List<List<Integer>> permute(int[] nums) {
+        ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
+        if (nums == null){
+            return res;
+        }
+        int m = nums.length;
+        if (m == 0){
+            res.add(new ArrayList<Integer>());
+            return res;
+        }
+        int start = 0;
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < m; i++){
+            list.add(nums[i]);
+        }
+        //permutation with recursion. 'start' is the index of the starting 
+        //point for swap
+        helper(res, list, start, m);
+        return res;
     }
-    else{
-        for(int i=start;i<len;i++){
-            swap(str.charAt(start),str.charAt(i));
-            permutations(str,start+1,len);
-            swap(str.charAt(start),str.charAt(i));
+    public static void helper(ArrayList<List<Integer>> res, 
+                    ArrayList<Integer> list, int start, int m){
+        if (start == m - 1){
+            res.add(new ArrayList<Integer>(list)); //deep copy
+        } else {
+            for (int i = start; i < m; i++){
+                Collections.swap(list, start, i);
+                helper(res, list, start + 1, m);
+                Collections.swap(list, start, i);
+            }
         }
     }
-}
-//swap two letters
-private static void swap(char a, char b){
-    char tmp=a;
-    a=b;
-    b=tmp;
 }
 ```
 
-There is another permutation without recursion <a href="http://stackoverflow.com/a/11471673/6181661" target="_blank">solution</a> which I haven't figured it out. Any comments to help me out is welcome!
+There is another permutation without recursion <a href="http://stackoverflow.com/a/11471673/6181661" target="_blank">solution</a> which I haven't figured it out. Any comment to help me out is welcome!
 
 ```java
 private static void printPermutations(String str){
-    int [] factorials = new int[str.length()+1];
+    int [] factorials = new int[str.length() + 1];
     factorials[0] = 1;
-    //generate the factorial
-    for(int i=1; i<str.length();i++){
-        factorials[i]=factorials[i-1]*i;
+    //(length-1)!
+    for(int i = 1; i < str.length(); i++){
+        factorials[i] = factorials[i-1] * i;
     }
-    //permutating 
-    for (int i=0; i<factorials[str.length()];i++){
-        for (int j=0; j<str.length();j++){
-            if(str.charAt(j)>str.charAt(j+1))
+    for (int i = 0; i < factorials[string.length()]; i++) {
+            String onePermutation="";
+            String temp = string;
+            int positionCode = i;
+            for (int position = string.length(); position > 0 ; position--){
+                int selected = positionCode / factorials[position - 1];
+                onePermutation += temp.charAt(selected);
+                positionCode = positionCode % factorials[position - 1];
+                temp = temp.substring(0, selected) + temp.substring(selected + 1);
+            }
+            System.out.println(onePermutation);
         }
-    }
+}
 ```
 
 Reference: 
