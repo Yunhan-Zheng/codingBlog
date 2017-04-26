@@ -15,7 +15,7 @@ The sample solution is as follows.
 class Solution {
     public int strStr2(String source, String target) {
         int HASH_SIZE = 1000000;
-        if(source == null && target == null){
+        if(source == null || target == null){
             return -1;
         }
         int l = target.length();
