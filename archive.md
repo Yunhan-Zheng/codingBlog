@@ -8,5 +8,5 @@ sequence: 2
 {% assign sortedTags = site_tags | split:',' | sort %}
 
 {% for post in site.posts %}
-  * {{ post.date | date_to_string }} &mdash; [ {{ post.title }} ]({{ post.url }})
+  * {{ post.date | date_to_string }} &mdash; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
 {% endfor %}
