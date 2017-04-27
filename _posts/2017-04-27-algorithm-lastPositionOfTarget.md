@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leetcode-Last position of target
-tags: algorithm leetcode jiuzhang binary_search
+title: Jiuzhang-Last position of target
+tags: algorithm jiuzhang binary_search
 comments: true
 ---
 

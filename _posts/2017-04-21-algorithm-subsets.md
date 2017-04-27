@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leetcode-Subsets I
-tags: algorithm leetcode array bit_manipulation
+title: Jiuzhang-Subsets I
+tags: algorithm jiuzhang array bit_manipulation dfs
 comments: true
 ---
 

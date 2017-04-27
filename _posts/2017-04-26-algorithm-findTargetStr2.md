@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leetcode-Find target string II
-tags: algorithm leetcode easy jiuzhang
+title: Jiuzhang-Find target string II
+tags: algorithm leetcode jiuzhang
 comments: true
 ---
 
