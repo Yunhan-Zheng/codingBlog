@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leetcode-Divide two integers
-tags: algorithm leetcode binary_search jiuzhang
+title: Jiuzhang-Divide two integers
+tags: algorithm binary_search jiuzhang
 comments: true
 ---
 

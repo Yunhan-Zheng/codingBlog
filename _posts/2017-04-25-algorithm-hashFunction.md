@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leetcode-Hash function
-tags: algorithm leetcode easy jiuzhang
+title: Jiuzhang-Hash function
+tags: algorithm jiuzhang
 comments: true
 ---
 

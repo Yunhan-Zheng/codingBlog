@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jiuzhang-Find target string II
-tags: algorithm leetcode jiuzhang
+tags: algorithm rabin–karp jiuzhang hash
 comments: true
 ---
 
