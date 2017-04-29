@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jiuzhang-Find Minimum in Rotated Sorted Array
-tags: algorithm jiuzhang binary_search
+tags: algorithm jiuzhang binary_search revisit
 comments: true
 ---
 
