@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jiuzhang-Search in a big sorted array
-tags: algorithm jiuzhang binary_search
+tags: algorithm jiuzhang binary_search revisit
 comments: true
 ---
 
