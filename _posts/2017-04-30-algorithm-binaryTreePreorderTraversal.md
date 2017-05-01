@@ -2,6 +2,7 @@
 layout: post
 title: Jiuzhang-Binary Tree Traversal--Preorder-Inorder-Postorder 
 tags: algorithm jiuzhang binary_tree divide_conquer non-recursion revisit
+date: 2017-04-30 10:05:14 -0400
 comments: true
 ---
 

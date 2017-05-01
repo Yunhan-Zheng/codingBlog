@@ -2,6 +2,7 @@
 layout: post
 title: Jiuzhang-Result Type-Balanced binary tree
 tags: algorithm jiuzhang binary_tree divide_conquer revisit resulttype
+date: 2017-04-30 13:00:14 -0400
 comments: true
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Jiuzhang-Maximum Depth of A Binary Tree
 tags: algorithm jiuzhang binary_tree divide_conquer revisit
+date: 2017-04-30 11:50:10 -0400
 comments: true
 ---
 
