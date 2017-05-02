@@ -2,6 +2,7 @@
 layout: post
 title: Jiuzhang-Maximum Number in A Mountain Sequence
 tags: algorithm jiuzhang binary_search revisit
+date: 2017-04-28 13:20:14 -0400
 comments: true
 ---
 

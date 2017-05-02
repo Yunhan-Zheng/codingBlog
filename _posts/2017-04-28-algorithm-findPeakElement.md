@@ -2,6 +2,7 @@
 layout: post
 title: Jiuzhang-Find peak element
 tags: algorithm jiuzhang binary_search
+date: 2017-04-28 14:10:10 -0400
 comments: true
 ---
 

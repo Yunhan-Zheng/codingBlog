@@ -2,6 +2,7 @@
 layout: post
 title: Jiuzhang-Search in a big sorted array
 tags: algorithm jiuzhang binary_search revisit
+date: 2017-04-28 12:20:14 -0400
 comments: true
 ---
 
