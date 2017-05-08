@@ -17,4 +17,4 @@ Thanks for reading!
 - - - - - - -
 Fun fact:
 
-I've created, with the help from my classmates, a [Powtoon clip](https://www.powtoon.com/online-presentation/dqfOS3CECpe/?mode=movie) on *Net Flix* with over *10K* views on [Youtube](https://www.youtube.com/watch?v=OWwSS6nrfQM&feature=em-upload_owner). Learn some business while coding! 
+I've created, with the help from my classmates, a [Powtoon clip](https://www.powtoon.com/online-presentation/dqfOS3CECpe/?mode=movie) on *Netflix* with over *10K* views on [Youtube](https://www.youtube.com/watch?v=OWwSS6nrfQM&feature=em-upload_owner). Learn some business while coding! 
