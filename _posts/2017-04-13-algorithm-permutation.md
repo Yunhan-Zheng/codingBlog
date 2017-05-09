@@ -1,18 +1,20 @@
 ---
 layout: post
 title: Permutation
-tags: algorithm leetcode jiuzhang
+tags: algorithm jiuzhang dfs
 comments: true
 ---
 
-<a href="https://en.wikipedia.org/wiki/Permutation" target="_blank">Permutation</a> is a possible  ordered sequence of different elements. 
+<a href="https://en.wikipedia.org/wiki/Permutation" target="_blank">Permutation</a> is a possible  ordered sequence of elements. 
 
 ### Lexicographical order - permutation without recursion
 > In mathematics, the lexicographic or lexicographical order (also known as lexical order, dictionary order, alphabetical order or lexicographic(al) product) is a generalization of the way the alphabetical order of words is based on the alphabetical order of their component letters. --Wiki
 
-Suppose you have an array of three different elements `['a','b','c']`, the lexicographical ordering of these elements is **abc < acb < bac < bca < cab < cba**
+Suppose you have an array of three elements `['a','b','c']`, the lexicographical ordering of these elements is **abc < acb < bac < bca < cab < cba**.
 
-Suppose P is a permutation of elements `[1,..,n]`, P=P<sub>1</sub>P<sub>2</sub>..P<sub>j</sub>P<sub>j+1</sub>..P<sub>k</sub>P<sub>k+1</sub>..P<sub>n</sub>. When searching from the right most of the array, I need to find the first element P<sub>j</sub> that allows P<sub>j</sub><P<sub>j+1</sub> and then find the first element P<sub>k</sub> that allows P<sub>k</sub>>P<sub>j</sub>. Swap P<sub>j</sub> with P<sub>k</sub>. Reverse the order of elements from index **j+1** to **n**. 
+How it works to generate lexicographical ordering?
+
+Suppose P is a permutation of elements `[P1,..,Pn]`. P=P<sub>1</sub> P<sub>2</sub> .. P<sub>j</sub> P<sub>j+1</sub> .. P<sub>k</sub> P<sub>k+1</sub> .. P<sub>n</sub>. When searching from the right most of the array, we need to find the first element P<sub>j</sub> that allows P<sub>j</sub> < P<sub>j+1</sub> and then find the first element P<sub>k</sub> that allows P<sub>k</sub> > P<sub>j</sub>. Swap P<sub>j</sub> with P<sub>k</sub>. Reverse the order of elements from index **j+1** to **n**. 
 
 Therefore, the code to generate all permutations based on lexicographical order in Java is as follows.<sup>[1]</sup> 
 
@@ -84,7 +86,7 @@ public class permutateCharArray {
 }
 ```
 ### Permutation with recursion
-Given an integer array with no duplicates `123`, all the permutations are `123`,`213`,`321`,`132`,`231` and `312`. In this permutation with recursion method, think `213` and `312` as results from swapping `1` with post integers `2` and `3` in `123` respectively, while `132` as a result from swapping `2` with its post integer `3` in `123`. In general, permutation is equal to swapping an integer with others following it, starting from the first position to the second last one.
+1. Given an integer array with **no duplicates** `123`, all the permutations are `123`,`213`,`321`,`132`,`231` and `312`. In this permutation with recursion method, think `213` and `312` as results from swapping `1` with post integers `2` and `3` in `123` respectively, while `132` as a result from swapping `2` with its post integer `3` in `123`. In general, permutation is equal to swapping an integer with others following it, starting from the first position to the second last one.
 
 ```java
 class Solution {
@@ -126,6 +128,7 @@ class Solution {
     }
 }
 ```
+2. Given an integer array with **duplicates** `122`, all the permutations are `122`,`212`,and `221`. In this permutation with recursion method, think `213` and `312` as results from swapping `1` with post integers `2` and `3` in `123` respectively, while `132` as a result from swapping `2` with its post integer `3` in `123`. In general, permutation is equal to swapping an integer with others following it, starting from the first position to the second last one.
 
 There is another permutation without recursion <a href="http://stackoverflow.com/a/11471673/6181661" target="_blank">solution</a> which I haven't figured it out. Any comment to help me out is welcome!
 

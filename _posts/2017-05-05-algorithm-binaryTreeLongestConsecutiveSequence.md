@@ -54,3 +54,5 @@ public class Solution {
 Reference:
 
 http://www.lintcode.com/en/problem/binary-tree-longest-consecutive-sequence/
+
+http://www.jiuzhang.com/solutions/binary-tree-longest-consecutive-sequence/
