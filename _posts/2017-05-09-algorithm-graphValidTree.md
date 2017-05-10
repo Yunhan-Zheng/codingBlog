@@ -2,7 +2,7 @@
 layout: post
 title: Jiuzhang-Graph Valid Tree
 tags: algorithm jiuzhang union_find bfs revisit facebook
-date: 2017-05-07 18:01:00 -0400
+date: 2017-05-09 16:01:00 -0400
 comments: true
 ---
 >Q: Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), write a function to check whether these edges make up a valid tree. Assume that no duplicate edges. All edges are undirected, which means that [0, 1] is the same as [1, 0] and thus the two will not appear together in edges.
@@ -47,8 +47,7 @@ public class Solution {
         }
         return hash.size() == n;    
     }
-}
-private Map<Integer, Set<Integer>> initializeGraph(int n, int[][] edges) {
+    private Map<Integer, Set<Integer>> initializeGraph(int n, int[][] edges) {
         Map<Integer, Set<Integer>> graph = new HashMap<>();
         for (int i = 0; i < n; i++) {
             graph.put(i, new HashSet<Integer>());
@@ -64,6 +63,7 @@ private Map<Integer, Set<Integer>> initializeGraph(int n, int[][] edges) {
         
         return graph;
     }
+}
 ```
 
 Another solution uses Union Find which I'll update my thoughts later.
