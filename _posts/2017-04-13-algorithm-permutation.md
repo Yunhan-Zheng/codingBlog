@@ -86,49 +86,91 @@ public class permutateCharArray {
 }
 ```
 ### Permutation with recursion
-1. Given an integer array with **no duplicates** `123`, all the permutations are `123`,`213`,`321`,`132`,`231` and `312`. In this permutation with recursion method, think `213` and `312` as results from swapping `1` with post integers `2` and `3` in `123` respectively, while `132` as a result from swapping `2` with its post integer `3` in `123`. In general, permutation is equal to swapping an integer with others following it, starting from the first position to the second last one.
+1. Given an integer array with **no duplicates** `123`, all the permutations are `123`,`213`,`321`,`132`,`231` and `312`. We will use DFS to solve it.
 
 ```java
-class Solution {
-    /**
-     * @param nums: A list of integers.
-     * @return: A list of permutations.
-     */
+public class Solution {
     public List<List<Integer>> permute(int[] nums) {
-        ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
-        if (nums == null){
-            return res;
-        }
-        int m = nums.length;
-        if (m == 0){
-            res.add(new ArrayList<Integer>());
-            return res;
-        }
-        int start = 0;
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int i = 0; i < m; i++){
-            list.add(nums[i]);
-        }
-        //permutation with recursion. 'start' is the index of the starting 
-        //point for swap
-        helper(res, list, start, m);
-        return res;
+         ArrayList<List<Integer>> rst = new ArrayList<List<Integer>>();
+         if (nums == null) {
+             return rst; 
+         }
+         
+         if (nums.length == 0) {
+            rst.add(new ArrayList<Integer>());
+            return rst;
+         }
+
+         ArrayList<Integer> list = new ArrayList<Integer>();
+         helper(rst, list, nums);
+         return rst;
     }
-    public static void helper(ArrayList<List<Integer>> res, 
-                    ArrayList<Integer> list, int start, int m){
-        if (start == m - 1){
-            res.add(new ArrayList<Integer>(list)); //deep copy
-        } else {
-            for (int i = start; i < m; i++){
-                Collections.swap(list, start, i);
-                helper(res, list, start + 1, m);
-                Collections.swap(list, start, i);
+    
+    public void helper(ArrayList<List<Integer>> rst, ArrayList<Integer> list, int[] nums){
+        if(list.size() == nums.length) {
+            rst.add(new ArrayList<Integer>(list));
+            return;
+        }
+        
+        for(int i = 0; i < nums.length; i++){
+            if(list.contains(nums[i])){
+                continue;
             }
+            list.add(nums[i]);
+            helper(rst, list, nums);
+            list.remove(list.size() - 1);
         }
     }
 }
 ```
-2. Given an integer array with **duplicates** `122`, all the permutations are `122`,`212`,and `221`. In this permutation with recursion method, think `213` and `312` as results from swapping `1` with post integers `2` and `3` in `123` respectively, while `132` as a result from swapping `2` with its post integer `3` in `123`. In general, permutation is equal to swapping an integer with others following it, starting from the first position to the second last one.
+2. Given an integer array with **duplicates**, find all unique permutations.
+
+Example:
+
+Given `[1,2,2]`, return `[[1,2,2], [2,1,2], [2,2,1]]`. 
+
+Thoughts:
+To distinguish two 2s, we use 2' and 2''. We order that 2'' cannot appear before 2'. Therefore, in the recursion method, we need to use an array called visited to store that information.
+
+```java
+class Solution {
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (nums == null){
+            return res;
+        }
+        int l = nums.length;
+        if (l == 0){
+            res.add(new ArrayList<Integer>());
+            return res;
+        }
+        Arrays.sort(nums);
+        ArrayList<Integer> list = new ArrayList<>();
+        int[] visited = new int[l];
+        for (int i = 0; i < l; i++){
+            visited[i] = 0;
+        }
+        helper(res, list, visited, nums);
+        return res;
+    }
+    private void helper(List<List<Integer>> res, ArrayList<Integer> list, int[] visited, int[] nums){
+        if (list.size() == nums.length){
+            res.add(new ArrayList<Integer>(list));
+            return;
+        }
+        for (int i = 0; i < nums.length; i++){
+            if (visited[i] == 1 || (i != 0 && visited[i-1] == 0 && nums[i] == nums[i-1])){
+                continue;
+            }
+            visited[i] = 1;
+            list.add(nums[i]);
+            helper(res, list, visited, nums);
+            list.remove(list.size() - 1);
+            visited[i] = 0;
+        }
+    }
+}
+```
 
 There is another permutation without recursion <a href="http://stackoverflow.com/a/11471673/6181661" target="_blank">solution</a> which I haven't figured it out. Any comment to help me out is welcome!
 
