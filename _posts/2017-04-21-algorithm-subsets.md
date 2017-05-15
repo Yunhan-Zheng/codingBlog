@@ -11,7 +11,7 @@ Example: input `{1,3,2}`, should return `{}`,`{1}`,`{2}`,`{3}`,`{1,2}`,`{1,3}`,`
 
 Thoughts:
 1. Arrays.sort() can take care of non-descending order.
-2. In a subset, elements can be picked or not picked using 0 or 1 as an indicator. Tha mapping for above example is as follows.
+2. In a subset, elements can be picked or not picked using 0 or 1 as an indicator. The mapping for above example is as follows.
 
 |bits|subset|
 |:----:|:-------:|
@@ -87,6 +87,39 @@ class Solution {
             dfs(S, i + 1, path, ret);
             path.remove(path.size() - 1); 
         }
+    }
+}
+```
+
+A follow up question could be allowing duplicates in the integer array.
+
+A solution using recursion can be as follows.
+
+```java
+class Solution {
+    public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] nums) {
+      ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+      if (nums == null){
+        return res;
+      }
+      if (nums.length == 0){
+        res.add(new ArrayList<Integer>());
+        return res;
+      }
+      Arrays.sort(nums);
+      helper(nums, 0, new ArrayList<Integer>(), res);
+      return res;
+    }
+    private void helper(int[] nums, int index, ArrayList<Integer> path, ArrayList<ArrayList<Integer>> res){
+      res.add(new ArrayList<Integer>(path));
+      for (int i = index; i < nums.length; i++){
+        if (i != index && nums[i] == nums[i - 1]){
+          continue;
+        }
+        path.add(nums[i]);
+        helper(nums, i + 1, path, res);
+        path.remove(path.size() - 1);
+      }
     }
 }
 ```

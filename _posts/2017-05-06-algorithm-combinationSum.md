@@ -55,6 +55,37 @@ public class Solution {
     }
 }
 ```
+A follow up question can be that each number in C may only be used once in the combination.
+
+```java
+public class Solution {
+    public List<List<Integer>> combinationSum2(int[] num, int target) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (num == null || num.length == 0){
+            return res;
+        }
+        Arrays.sort(num);
+        helper(num, target, 0, res, new ArrayList<Integer>());
+        return res;
+    }
+    private void helper(int[] num, int target, int startIndex, List<List<Integer>> res, ArrayList<Integer> comb){
+        if (target == 0){
+            res.add(new ArrayList<Integer>(comb));
+        }
+        for (int i = startIndex; i < num.length; i++){
+            if (num[i] > target){
+                break;
+            }
+            if (i != startIndex && num[i] == num[i - 1]){
+                continue;
+            }
+            comb.add(num[i]);
+            helper(num, target - num[i], i + 1, res, comb);
+            comb.remove(comb.size() - 1);
+        }
+    }
+}
+```
 
 Reference:
 
