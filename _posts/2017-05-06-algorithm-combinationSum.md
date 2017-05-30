@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Combination Sum
+title: Combination Sum
 tags: algorithm jiuzhang array sort backtracking dfs revisit
 date: 2017-05-06 16:03:00 -0400
 comments: true

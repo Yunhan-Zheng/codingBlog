@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Search Graph Nodes
+title: Search Graph Nodes
 tags: algorithm jiuzhang array bfs revisit apple
 date: 2017-05-07 18:01:00 -0400
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Clone Graph
+title: Clone Graph
 tags: algorithm jiuzhang bfs revisit facebook
 date: 2017-05-09 16:41:00 -0400
 comments: true

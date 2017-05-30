@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Hash function
+title: Hash Function
 tags: algorithm jiuzhang
 comments: true
 ---

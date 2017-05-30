@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Breadth First Search
+title: Breadth First Search
 tags: algorithm jiuzhang bfs revisit
 date: 2017-05-05 14:01:00 -0400
 comments: true

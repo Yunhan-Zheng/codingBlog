@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Subsets I
+title: Subsets I
 tags: algorithm jiuzhang array bit_manipulation dfs
 comments: true
 ---

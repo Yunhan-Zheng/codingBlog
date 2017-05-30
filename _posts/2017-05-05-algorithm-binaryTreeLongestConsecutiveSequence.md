@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Binary Tree Longest Consecutive Sequence
+title: Binary Tree Longest Consecutive Sequence
 tags: algorithm jiuzhang binary_tree divide_conquer revisit
 date: 2017-05-05 14:01:00 -0400
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Subsets II
+title: Subsets II
 tags: algorithm jiuzhang array recursion
 comments: true
 ---

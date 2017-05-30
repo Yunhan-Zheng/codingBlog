@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Find target string II
+title: Find Target String II
 tags: algorithm rabin–karp jiuzhang hash
 comments: true
 ---

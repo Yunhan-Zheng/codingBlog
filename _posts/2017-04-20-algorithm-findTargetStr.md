@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode-Find target string
+title: Find target string
 tags: algorithm leetcode easy
 comments: true
 ---

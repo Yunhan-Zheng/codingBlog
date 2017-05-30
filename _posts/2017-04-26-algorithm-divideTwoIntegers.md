@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Divide two integers
+title: Divide Two Integers
 tags: algorithm binary_search jiuzhang
 comments: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Closest Number in A Sorted Array
+title: Closest Number in A Sorted Array
 tags: algorithm jiuzhang binary_search revisit
 comments: true
 ---
