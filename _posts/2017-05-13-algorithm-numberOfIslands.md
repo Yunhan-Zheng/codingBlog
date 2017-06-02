@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Number of Islands
+title: Number of Islands
 tags: algorithm jiuzhang bfs revisit google facebook
 date: 2017-05-13 12:44:00 -0400
 comments: true

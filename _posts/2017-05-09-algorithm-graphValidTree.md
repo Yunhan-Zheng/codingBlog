@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jiuzhang-Graph Valid Tree
+title: Graph Valid Tree
 tags: algorithm jiuzhang union_find bfs revisit facebook
 date: 2017-05-09 16:01:00 -0400
 comments: true
