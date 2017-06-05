@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insert into a Cyclic Sorted List
+title: Insert into a Cyclic Sorted List[E]
 tags: algorithm jiuzhang amazon linkedList revisit
 date: 2017-06-04 09:21:00 -0400
 comments: true

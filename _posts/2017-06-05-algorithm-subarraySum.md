@@ -11,7 +11,7 @@ Example:
 
 Given [-3, 1, 2, -3, 4], return the index of the head and tail of subarray whose sum is 0: [0, 2] or [1, 3].
 
-### Sample solution using HashMap
+### Using HashMap
 
 Map stores sum[0, i]. If sum[0, j] == sum[0, i], then sum[i + 1, j], inclusive, is 0.
 
