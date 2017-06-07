@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Insert into a Cyclic Sorted List[E]
-tags: algorithm jiuzhang amazon linkedList revisit
+tags: algorithm jiuzhang amazon linked_list revisit
 date: 2017-06-04 09:21:00 -0400
 comments: true
 ---
