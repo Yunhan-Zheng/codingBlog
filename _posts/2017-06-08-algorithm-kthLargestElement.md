@@ -13,7 +13,7 @@ Example:
 
 In array [9,3,2,4,8], the 3rd largest element is 4.
 
-### Quick sort - with expectation time complexity O(n), O(1) extra memory.
+### Quick select - with expectation time complexity O(n), O(1) extra memory.
 
 Based on <a href="https://en.wikipedia.org/wiki/Quickselect" target="_blank">quick select</a>.
 
@@ -26,10 +26,10 @@ public class Solution {
     public int kthLargestElement(int k, int[] nums) {
         int n = nums.length;
         int target = n - k;
-        quicksort(nums, 0, n - 1, target);
+        quickSelect(nums, 0, n - 1, target);
         return nums[target];
     }
-    private void quicksort(int[] nums, int start, int end, int target){
+    private void quickSelect(int[] nums, int start, int end, int target){
         if (start >= end){
             return;
         }
@@ -53,9 +53,9 @@ public class Solution {
             }
         }
         if (target < left){
-            quicksort(nums, start, left - 1, target);
+            quickSelect(nums, start, left - 1, target);
         } else {
-            quicksort(nums, left, end, target);
+            quickSelect(nums, left, end, target);
         }
     }
     private int choosePivot(int a, int b, int c){
@@ -76,7 +76,6 @@ public class Solution {
                 return b;
             }
         }
-    }
-    
+    } 
 }
 ```
