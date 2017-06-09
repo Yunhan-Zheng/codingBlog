@@ -13,7 +13,9 @@ Given [-3, 1, 1, -3, 5], return [0, 2], [1, 3], [1, 1], [2, 2] or [0, 4].
 
 ### Prefix Sum
 
-For every integer array, sum[i + 1, j] = sum[0, j] - sum[0, i]. sum[0, i] is called `prefix sum`. We need to store all prefix sums and sort them. The smallest one is the difference between adjacent two sums.
+For every integer array, sum[i + 1, j) = sum[0, j) - sum[0, i). sum[0, i) is called `prefix sum`. PrefixSum[0] = 0.
+
+We need to store all prefix sums and sort them. The smallest one is the difference between adjacent two sums.
 
 ```java
 class PrefixSum{

@@ -11,9 +11,9 @@ Example:
 
 Given [-3, 1, 2, -3, 4], return the index of the head and tail of subarray whose sum is 0: [0, 2] or [1, 3].
 
-### Using HashMap
+### Using HashMap - O(n) time complexity
 
-Map stores sum[0, i]. If sum[0, j] == sum[0, i], then sum[i + 1, j], inclusive, is 0.
+Map stores sum[i]. If sum[j] == sum[i], then sum[i, j - 1], is 0.
 
 ```java
 public class Solution {
