@@ -24,5 +24,5 @@ Prerequisites: VS Code
 If you see the same options once you type `yo aspnet`, you have successfully installed Yeoman and the ASP.NET generator!
 
 <p>
-	<img style="width:100%;display:inline-block" alt="options of the aspnet generator" src="{{site.baseurl}}/public/image/yeoman.jpg">
+	<img style="width:100%;display:inline-block" alt="options of the aspnet generator" src="{{site.baseurl}}/public/image/yeoman.JPG">
 </p>
