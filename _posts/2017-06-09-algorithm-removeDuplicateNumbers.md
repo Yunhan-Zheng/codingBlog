@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Remove Duplicate Numbers in Array[E]
-tags: algorithm jiuzhang amazon hash_set sort two_pointers array revisit
+tags: algorithm jiuzhang amazon hash_set sort two_pointers array
 date: 2017-06-09 10:11:00 -0400
 comments: true
 ---
@@ -14,7 +14,7 @@ Given nums = [1,3,1,4,4,2], we should:
 1. Move duplicate integers to the tail of nums => nums = [1,3,4,2,?,?].
 2. Return the number of unique integers in nums => 4.
 
-Note that ? stands for duplicates which we don't care anymore.
+Note that `?` stands for duplicates which we don't care anymore.
 
 ### HashSet with time O(n) and space O(n)
 
