@@ -69,7 +69,7 @@ Since nodes may not exist, we need a flag to store the existence info. We then c
 
 There are four scenarios in this problem:
 
-1. A == root || B == root
+1. A == root or B == root
 2. left subtree contains one node && right subtree contains one node
 3. only left subtree contains one node
 4. only right subtree contains one node
