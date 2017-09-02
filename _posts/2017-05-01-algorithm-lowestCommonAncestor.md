@@ -24,7 +24,7 @@ Thoughts:
 
 1. If one of the nodes is a root of the other, return the root node.
 2. If found both in the left and the right tree, return the root.
-3. If not found in either left or right subtree, return the opposite side result
+3. If not found in left/right subtree, return the right/left root.
 4. If didn't find any of the node, return null.
 
 ```java
